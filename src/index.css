@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("./fonts/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf");
+  font-weight: bold;
+}
+
+thead{
+    font-family: "SatoshiBold";
+}
+
+#navbar{
+    font-family: "SatoshiBold", sans-serif;
+}
+
+body{
+    font-family: "SatoshiBold", sans-serif;
+    background-color:#0a1a2f;
+}
+
+table{
+    font-family: "Satoshi", sans-serif;
+}
+
