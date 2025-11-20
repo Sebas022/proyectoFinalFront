@@ -18,9 +18,9 @@ function AppContent() {
       {!hideNavbar && <NavBar />}
 
       <Routes>
+        <Route path="/login" element={<LoginView />} />
         <Route path="/" element={<HomeView />} />
         <Route path="/crearprenda" element={<CreateClotheView />} />
-        <Route path="/login" element={<LoginView />} />
         <Route path="/actualizarprenda/:id" element={<UpdateClotheView />} />
         <Route path="/eliminarprenda/:id" element={<HomeView />} />
       </Routes>
