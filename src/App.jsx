@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import NavBar from './components/NavBar';
 import HomeView from './views/HomeView';
-import CreateClotheView from './views/createClotheView';
+import CreateClotheView from './views/CreateClotheView';
 import UpdateClotheView from './views/UpdateClotheView';
 import LoginView from './auth/LoginView';
 
