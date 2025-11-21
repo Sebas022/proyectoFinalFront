@@ -2,14 +2,14 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import NavBar from './components/NavBar';
 import HomeView from './views/HomeView';
-import CreateClotheView from './views/CreateClotheView';
+import CreateClotheView from './views/createClotheView';
 import UpdateClotheView from './views/UpdateClotheView';
 import LoginView from './auth/LoginView';
 
 function AppContent() {
   const location = useLocation();
 
-  const noNavbarRoutes = ["/login"];
+  const noNavbarRoutes = ["/"];
 
   const hideNavbar = noNavbarRoutes.includes(location.pathname);
 
@@ -18,8 +18,8 @@ function AppContent() {
       {!hideNavbar && <NavBar />}
 
       <Routes>
-        <Route path="/login" element={<LoginView />} />
-        <Route path="/" element={<HomeView />} />
+        <Route path="/" element={<LoginView />} />
+        <Route path="/home" element={<HomeView />} />
         <Route path="/crearprenda" element={<CreateClotheView />} />
         <Route path="/actualizarprenda/:id" element={<UpdateClotheView />} />
         <Route path="/eliminarprenda/:id" element={<HomeView />} />

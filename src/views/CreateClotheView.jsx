@@ -63,7 +63,7 @@ const CreateClotheView = () => {
       });
 
       reset();
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       Swal.fire({
         icon: "error",

@@ -10,7 +10,7 @@ const LoginView = () => {
   const onSubmit = async (data) => {
     try {
       await loginUser(data.email, data.password);
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       alert("Error de login: " + error.message);
     }

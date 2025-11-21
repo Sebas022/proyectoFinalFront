@@ -21,7 +21,7 @@ const NavBar = () => {
 
       Swal.fire("Sesión cerrada", "Has cerrado sesión correctamente", "success");
 
-      navigate("/login");
+      navigate("/");
     }
   };
 
@@ -33,7 +33,7 @@ const NavBar = () => {
   className="w-full h-20 flex items-center px-6 gap-6 bg-[#111111] text-white shadow-md"
 >
   {/* HOME */}
-  <Link to="/" className="text-3xl p-5">
+  <Link to="/home" className="text-3xl p-5">
     Home
   </Link>
 

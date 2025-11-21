@@ -61,7 +61,7 @@ const UpdateClotheView = () => {
         theme: "dark",
       });
 
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       Swal.fire({
         icon: "error",
@@ -167,7 +167,7 @@ const UpdateClotheView = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 mt-2 rounded-lg hover:bg-blue-700 transition"
+          className="w-full bg-blue-600 text-white py-2 mt-2 rounded-lg hover:bg-blue-700 transition cursor-pointer"
         >
           Actualizar Prenda
         </button>
